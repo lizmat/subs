@@ -1,0 +1,23 @@
+{
+  "auth" : "cpan:ELIZABETH",
+  "authors" : [
+    "Elizabeth Mattijsen"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "Port of Perl 5's pragma to predeclare sub names to Perl 6",
+  "license" : "Artistic-2.0",
+  "name" : "subs",
+  "perl" : "6.c",
+  "provides" : {
+    "subs" : "lib/subs.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "https://github.com/lizmat/subs.git",
+  "tags" : [
+    "UTILS",
+    "CPAN5"
+  ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
