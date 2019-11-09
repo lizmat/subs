@@ -1,6 +1,6 @@
 use v6.c;
 
-module subs:ver<0.0.1>:auth<cpan:ELIZABETH> { }
+module subs:ver<0.0.2>:auth<cpan:ELIZABETH> { }
 
 sub EXPORT(*@subs) {
     my %export;
@@ -12,7 +12,7 @@ sub EXPORT(*@subs) {
 
 =head1 NAME
 
-subs - Port of Perl 5's pragma to predeclare sub names to Perl 6
+subs - Port of Perl's pragma to predeclare sub names to Raku
 
 =head1 SYNOPSIS
 
@@ -33,14 +33,14 @@ See "Pragmatic Modules" in perlmodlib and "strict subs" in strict.
 
 =head1 PORTING CAVEATS
 
-Due to the nature of the export mechanism in Perl 6, it is impossible (at the moment
-of this writing: 2018.05) to export to the OUR:: stash from a module.  Therefore
-the Perl 6 version of this module exports to the B<lexical> scope in which the
-C<use> command occurs.  For most standars uses, this is equivalent to the Perl 5
-behaviour.
+Due to the nature of the export mechanism in Raku, it is impossible (at the
+moment of this writing: 2019.11) to export to the OUR:: stash from a module.
+Therefore the Raku version of this module exports to the B<lexical> scope in
+which the C<use> command occurs.  For most standars uses, this is equivalent
+to the Perl behaviour.
 
-If you really want to create stubs in the C<OUR::> stash, you can run the following
-code in your program:
+If you really want to create stubs in the C<OUR::> stash, you can run the
+following code in your program:
 
   BEGIN OUR::{$_} := sub { ... } for <&foo &bar &baz>;
 
@@ -53,9 +53,9 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

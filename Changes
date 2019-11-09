@@ -2,5 +2,9 @@ Revision history for subs
 
 {{$NEXT}}
 
+0.0.2  2019-11-09T22:47:16+01:00
+    - changed Perl 6 to Raku, and Perl 5 to Perl
+    - updated copyright and some other dates
+
 0.0.1  2018-06-03T00:27:02+02:00
     - Initial version

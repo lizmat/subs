@@ -5,7 +5,7 @@
   ],
   "build-depends" : [ ],
   "depends" : [ ],
-  "description" : "Port of Perl 5's pragma to predeclare sub names to Perl 6",
+  "description" : "Port of Perl's pragma to predeclare sub names to Raku",
   "license" : "Artistic-2.0",
   "name" : "subs",
   "perl" : "6.c",
@@ -19,5 +19,5 @@
     "CPAN5"
   ],
   "test-depends" : [ ],
-  "version" : "0.0.1"
+  "version" : "0.0.2"
 }
