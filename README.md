@@ -1,7 +1,7 @@
 NAME
 ====
 
-subs - Port of Perl's pragma to predeclare sub names to Raku
+Raku port of Perl's "subs" pragma
 
 SYNOPSIS
 ========
@@ -11,6 +11,8 @@ SYNOPSIS
 
 DESCRIPTION
 ===========
+
+This module tries to mimic the behaviour of Perl's `subs` pragma as closely as possible in the Raku Programming Language.
 
 This will predeclare all the subroutine whose names are in the list, allowing you to use them without parentheses even before they're declared.
 
@@ -37,7 +39,7 @@ Source can be located at: https://github.com/lizmat/subs . Comments and Pull Req
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 

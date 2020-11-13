@@ -1,23 +1,27 @@
 {
-  "auth" : "cpan:ELIZABETH",
-  "authors" : [
+  "auth": "cpan:ELIZABETH",
+  "authors": [
     "Elizabeth Mattijsen"
   ],
-  "build-depends" : [ ],
-  "depends" : [ ],
-  "description" : "Port of Perl's pragma to predeclare sub names to Raku",
-  "license" : "Artistic-2.0",
-  "name" : "subs",
-  "perl" : "6.c",
-  "provides" : {
-    "subs" : "lib/subs.pm6"
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Raku port of Perl's 'subs' pragma",
+  "license": "Artistic-2.0",
+  "name": "subs",
+  "perl": "6.c",
+  "provides": {
+    "subs": "lib/subs.pm6"
   },
-  "resources" : [ ],
-  "source-url" : "https://github.com/lizmat/subs.git",
-  "tags" : [
+  "resources": [
+  ],
+  "source-url": "https://github.com/lizmat/subs.git",
+  "tags": [
     "UTILS",
     "CPAN5"
   ],
-  "test-depends" : [ ],
-  "version" : "0.0.2"
+  "test-depends": [
+  ],
+  "version": "0.0.3"
 }

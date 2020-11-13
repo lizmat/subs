@@ -1,6 +1,6 @@
-use v6.c;
+use v6.*;
 
-module subs:ver<0.0.2>:auth<cpan:ELIZABETH> { }
+module subs:ver<0.0.3>:auth<cpan:ELIZABETH> { }
 
 sub EXPORT(*@subs) {
     my %export;
@@ -12,7 +12,7 @@ sub EXPORT(*@subs) {
 
 =head1 NAME
 
-subs - Port of Perl's pragma to predeclare sub names to Raku
+Raku port of Perl's "subs" pragma
 
 =head1 SYNOPSIS
 
@@ -20,6 +20,9 @@ subs - Port of Perl's pragma to predeclare sub names to Raku
     frob 3..10;
 
 =head1 DESCRIPTION
+
+This module tries to mimic the behaviour of Perl's C<subs> pragma
+as closely as possible in the Raku Programming Language.
 
 This will predeclare all the subroutine whose names are in the list,
 allowing you to use them without parentheses even before they're declared.
@@ -53,7 +56,7 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
@@ -61,4 +64,4 @@ This library is free software; you can redistribute it and/or modify it under th
 
 =end pod
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

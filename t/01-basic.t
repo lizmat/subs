@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 use Test;
 
 BEGIN my @subs = <foo bar baz>;
@@ -20,4 +20,4 @@ is foo, "foo", 'did we get the right foo';
 is bar, "bar", 'did we get the right bar';
 is baz, "baz", 'did we get the right baz';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4
